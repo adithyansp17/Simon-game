@@ -44,7 +44,7 @@ function checkAnswer(currentLevel) {
     } else {
 
       console.log("wrong");
-      var wrong = new Audio("./sound/wromg.mp3");
+      var wrong = new Audio("./wromg.mp3");
       wrong.play();
       $("body").addClass("gameover");
       setTimeout(function () {
@@ -78,7 +78,7 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var audio = new Audio("sounds/" + name + ".mp3");
+  var audio = new Audio("./" + name + ".mp3");
   audio.play();
 }
 
